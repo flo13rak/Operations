@@ -7,31 +7,33 @@
     <title>Operations</title>
   </head>
   <body>
-
-    
-
     <script>
+      var number_a = parseFloat(prompt("Enter first number : "));
+      var operation = prompt("Enter operation ( +, -, *, / ): ");
+      var number_b = parseFloat(prompt("Enter second number : "));
 
-var number_a = prompt("Please enter first number:");
-var operation = prompt("Please enter operation");
-var number_b = prompt("Please enter second number:");
+      var result;
 
-
-
-number_a = parseInt(number_a);
-number_b = parseInt(number_b);
-
-var sum = parseInt(number_a) + parseInt(number_b);
-var sub = parseInt(number_a) - parseInt(number_b);
-var mul = parseInt(number_a) * parseInt(number_b);
-var div = parseInt(number_a) / parseInt(number_b);
-
-alert("Sum is " + sum);
-alert("Subtract is " + sub);
-alert("Multiple is " + mul);
-alert("Division is " + div);
-
-
+      switch (operation) {
+        case '+':
+          sum = number_a + number_b;
+          alert('Sum is ' + sum);
+          break;
+        case '-':
+          sub = number_a - number_b;
+          alert('Subtract is ' + sub);
+          break;
+        case '*':
+          mul = number_a * number_b;
+          alert('Multiply is ' + mul);
+          break;
+        case '/':
+          div = number_a / number_b;
+          alert('Division is ' + div);
+          break;
+        default:
+          alert('Invalid operation');
+      }
     </script>
   </body>
 </html>
