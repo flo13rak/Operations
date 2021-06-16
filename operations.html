@@ -14,7 +14,10 @@
 
       var result;
 
-      switch (operation) {
+      if(isNaN(number_a)||isNaN(number_b)){
+        alert("Valoarea unuia din operanzi nu este numerica");
+      } else {
+        switch (operation) {
         case '+':
           sum = number_a + number_b;
           alert('Sum is ' + sum);
@@ -34,6 +37,9 @@
         default:
           alert('Invalid operation');
       }
+      }
+
+      
     </script>
   </body>
 </html>
